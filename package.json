@@ -1,0 +1,32 @@
+{
+    "name": "promise-extra",
+    "version": "0.0.1",
+    "main": "lib/index.js",
+    "repository": "git@github.com:yuffiy/promise-extra.git",
+    "author": "Rabbit <yfhj1990@hotmail.com>",
+    "license": "GPL-3.0",
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-jest": "^21.0.2",
+        "babel-preset-env": "^1.6.0",
+        "babel-preset-flow": "^6.23.0",
+        "flow-bin": "^0.54.1",
+        "jest": "^21.1.0",
+        "lodash": "^4.17.4",
+        "rollup": "^0.50.0",
+        "rollup-plugin-babel": "^3.0.2",
+        "rollup-plugin-uglify": "^2.0.1"
+    },
+    "files": [
+        "dist",
+        "lib"
+    ],
+    "scripts": {
+        "test": "jest",
+        "typed": "flow",
+        "checkall": "yarn test && yarn typed",
+        "build:umd": "cross-env NODE_ENV=development rollup -c",
+        "build:umd:min": "cross-env NODE_ENV=production rollup -c",
+        "build": "yarn build:umd && yarn build:umd:min"
+    }
+}
