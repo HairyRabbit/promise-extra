@@ -4,7 +4,7 @@ import uglify    from 'rollup-plugin-uglify'
 import pkg       from './package.json'
 
 const input     = pkg.main
-const name      = startCase(pkg.name).replace(/\s/g, '')
+const name      = startCase(pkg.npmName).replace(/\s/g, '')
 const format    = 'umd'
 const sourcemap = true
 

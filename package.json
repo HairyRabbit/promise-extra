@@ -1,5 +1,6 @@
 {
-    "name": "promise-extra",
+    "name": "rabbit-promise-extra",
+    "npmName": "promise-extra",
     "version": "0.0.1",
     "main": "lib/index.js",
     "repository": "git@github.com:yuffiy/promise-extra.git",
