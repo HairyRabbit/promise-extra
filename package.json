@@ -28,7 +28,7 @@
         "checkall": "yarn test && yarn typed",
         "build:umd": "cross-env NODE_ENV=development rollup -c",
         "build:umd:min": "cross-env NODE_ENV=production rollup -c",
-        "build:libdefs": "flow gen-flow-files lib\index.js > dist/rabbit-promise-extra.js.flow",
+        "build:libdefs": "flow gen-flow-files lib/index.js > dist/rabbit-promise-extra.js.flow",
         "build": "yarn build:umd && yarn build:umd:min && yarn build:libdefs"
     }
 }
