@@ -1,7 +1,7 @@
 {
     "name": "rabbit-promise-extra",
     "npmName": "promise-extra",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "main": "dist/promise-extra.js",
     "repository": "git@github.com:yuffiy/promise-extra.git",
     "author": "Rabbit <yfhj1990@hotmail.com>",
@@ -19,6 +19,7 @@
         "rollup-plugin-uglify": "^2.0.1"
     },
     "files": [
+        "flow-typed",
         "dist",
         "lib"
     ],
