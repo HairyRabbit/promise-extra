@@ -1,7 +1,7 @@
 {
     "name": "rabbit-promise-extra",
     "npmName": "promise-extra",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "main": "dist/promise-extra.js",
     "repository": "git@github.com:yuffiy/promise-extra.git",
     "author": "Rabbit <yfhj1990@hotmail.com>",
@@ -19,7 +19,6 @@
         "rollup-plugin-uglify": "^2.0.1"
     },
     "files": [
-        "flow-typed",
         "dist",
         "lib"
     ],
@@ -29,6 +28,7 @@
         "checkall": "yarn test && yarn typed",
         "build:umd": "cross-env NODE_ENV=development rollup -c",
         "build:umd:min": "cross-env NODE_ENV=production rollup -c",
-        "build": "yarn build:umd && yarn build:umd:min"
+        "build:libdefs": "flow gen-flow-files lib\index.js > dist/rabbit-promise-extra.js.flow",
+        "build": "yarn build:umd && yarn build:umd:min && yarn build:libdefs"
     }
 }
