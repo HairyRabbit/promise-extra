@@ -3,7 +3,7 @@ import babel     from 'rollup-plugin-babel'
 import uglify    from 'rollup-plugin-uglify'
 import pkg       from './package.json'
 
-const input     = pkg.main
+const input     = 'lib/index.js'
 const name      = startCase(pkg.npmName).replace(/\s/g, '')
 const format    = 'umd'
 const sourcemap = true
