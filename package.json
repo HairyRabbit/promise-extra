@@ -1,7 +1,7 @@
 {
-    "name": "rabbit-promise-extra",
+    "name": "@rabbitcc/promise-extra",
     "npmName": "promise-extra",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "main": "dist/promise-extra.js",
     "repository": "git@github.com:yuffiy/promise-extra.git",
     "author": "Rabbit <yfhj1990@hotmail.com>",
